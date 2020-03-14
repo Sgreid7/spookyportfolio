@@ -22,7 +22,7 @@ main {
 
 .card {
   display: flex;
-  height: 100vh;
+  height: 95vh;
   width: 90vw;
   margin: 1rem;
   background-repeat: no-repeat;
@@ -226,8 +226,8 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 10rem 0;
-  padding: 5rem 0;
+  margin: 5rem 0;
+  padding: 3rem 0;
 }
 
 footer h1 {
@@ -310,22 +310,34 @@ button:hover {
     padding: 0;
   }
 
+  .top-nav h3 {
+    font-size: 2rem;
+  }
+
+  .top-nav a {
+    font-size: 1.3rem;
+  }
+
   .bot-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 5rem;
-    font-size: 2rem;
+  }
+
+  .bot-nav a {
+    font-size: 1.2rem;
   }
 
   button {
     padding: 1rem 2rem;
+    font-size: 1rem;
   }
 
   header p {
-    margin: 6rem 2rem;
+    margin: 4rem 2rem;
     font-size: 4rem;
-    padding: 0rem 8rem;
+    padding: 2rem 8rem;
   }
 
   header {
@@ -376,6 +388,36 @@ button:hover {
 
   footer {
     margin: 3rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  header h3 {
+    font-size: 2rem;
+  }
+
+  header p {
+    height: 75vh;
+    margin: 0 4rem;
+    padding: 10rem;
+    height: 25vh;
+  }
+
+  .top-nav a {
+    font-size: 1.5rem;
+  }
+
+  .bot-nav a {
+    font-size: 1.5rem;
+  }
+
+  .bot-nav {
+    margin-left: 5rem;
+    padding: 5rem;
+  }
+
+  button {
+    font-size: 1rem;
   }
 }
 
