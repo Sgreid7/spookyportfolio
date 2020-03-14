@@ -260,19 +260,22 @@ button {
 
   main {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2rem;
   }
 
   .grid-left {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     /* grid-row-start: 1;
     grid-row-end: 3; */
+    height: 98vh;
   }
 
   .grid-right {
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
+    height: 98vh;
     /* grid-row-start: ;
     grid-row-end: ; */
   }
@@ -280,27 +283,31 @@ button {
   .grid-mid-left {
     grid-column-start: 1;
     grid-column-end: 3;
+    height: 98vh;
   }
 
   .grid-mid {
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    height: 98vh;
   }
 
   .grid-mid-right {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    height: 98vh;
   }
 
   .grid-full {
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
+    height: 98vh;
   }
 
-  img {
+  /* img {
     width: 15vw;
     height: 30vh;
-  }
+  } */
 
   footer {
     margin: 3rem;
