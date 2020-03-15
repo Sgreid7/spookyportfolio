@@ -22,33 +22,44 @@ main {
 
 .card {
   display: flex;
+  align-items: flex-end;
   height: 95vh;
   width: 90vw;
   margin: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  position: relative;
+  transition: 0.3s ease;
 }
 
-/* .card:hover {
-  opacity: 0.4;
-} */
+.card div {
+  background: transparent;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
 
-.card h2 {
-  font-size: 2rem;
+.card div:hover {
+  background-color: #000;
+  opacity: 0.7;
+  color: #fff;
+}
+
+div h2 {
   display: flex;
   align-items: flex-end;
-  margin-left: 2rem;
-  margin-bottom: 3rem;
-  visibility: hidden;
+  font-size: 2rem;
+  margin: 0 2rem 5rem 2rem;
 }
 
-/* .card h2:hover {
-  visibility: visible;
-  z-index: 1;
-  position: absolute;
-} */
+.slide-left-text {
+  animation: slide-left 1s;
+}
 
 /* IMAGES */
 .one {
@@ -124,9 +135,6 @@ nav li {
 
 .active {
   color: rgb(251, 69, 76);
-}
-
-span {
   text-shadow: 0.08rem 0.08rem 0.08rem #fff;
 }
 
@@ -455,14 +463,17 @@ button:hover {
   }
 }
 
-@keyframes slideleft {
+@keyframes slide-left {
   0% {
-    opacity: 0;
-    transform: translateX(-2rem);
+    transform: translate(0);
+  }
+
+  80% {
+    transform: translateX(5rem);
+    letter-spacing: 0.5rem;
   }
 
   100% {
-    opacity: 1;
     transform: translate(0);
   }
 }
@@ -472,10 +483,6 @@ button:hover {
     opacity: 1;
     transform: rotate(25deg);
   }
-
-  /* 80% {
-      transform: rotate(8deg);
-    } */
 
   100% {
     opacity: 1;
